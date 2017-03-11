@@ -1,0 +1,38 @@
+SQL> select username, profile
+  2  from dba_users
+  3  where profile not in ('ADMIN_ACCOUNTS', 'APPLICATION_OWNER', 'DEFAULT')
+  4  AND username not in ('ALAMIM', 'BHATIANI', 'CHINNI', 'GOLAMMU', 'WULI', 'ZHANGEU')
+  5  order by username
+  6  /
+
+USERNAME                  PROFILE                                               
+------------------------- ----------------                                      
+AKHTARJU                  ENDUSER                                               
+CHOWDHKA                  DEVELOPER                                             
+DEVELOPERTEST             DEVELOPER                                             
+DEVELOPER_TEMPLATE        DEVELOPER                                             
+GUANRE                    ENDUSER                                               
+ICMSINSPECTOR1            ENDUSER                                               
+ICMSINSPECTOR2            ENDUSER                                               
+ICMSINVESTIGATOR1         ENDUSER                                               
+ICMSINVESTIGATOR2         ENDUSER                                               
+ICMSLEAD1                 ENDUSER                                               
+ICMSLEAD2                 ENDUSER                                               
+ICMSMANAGER1              ENDUSER                                               
+ICMSMANAGER2              ENDUSER                                               
+ICMSSUPERUSER1            ENDUSER                                               
+ICMSSUPERUSER2            ENDUSER                                               
+KHANZA                    ENDUSER                                               
+KHANZAK                   DEVELOPER                                             
+MUSTOFGO                  DEVELOPER                                             
+RADODE                    ENDUSER                                               
+SATIJARA                  ENDUSER                                               
+SAVCHUIH                  ENDUSER                                               
+TALEVAS2                  DEVELOPER                                             
+TSOUST                    ENDUSER                                               
+VOLKOVDM                  ENDUSER                                               
+WUL1                      ENDUSER                                               
+
+25 rows selected.
+
+SQL> spool off;
