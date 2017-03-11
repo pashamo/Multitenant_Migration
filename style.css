@@ -1,0 +1,15 @@
+body {
+    text-align: center;
+    margin: auto;
+    max-width: 750px;
+    background-image: url("pattern.png");
+    background-repeat: repeat;
+    color: linen;
+}
+
+p {
+    text-align: left;
+}
+p#data {
+    color: grey;
+}
