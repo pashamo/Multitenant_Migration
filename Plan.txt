@@ -1,0 +1,15 @@
+CHANGES:
+11/03/2017
+- "# of data elements:" to "# of data element pairs:" as to mirror the "selected rows" which is found in the sql query.
+- Create/Grant commands list seperated
+- Password field implemented to change password through application
+- JS Code has been cleaned - requires optimization
+- GADMDEV3 list is included for next phase testing
+
+PLAN:
+- Further code cleanup required*
+- Verify TEMPAPPDEVELOPER profile and modify create/grant commands as necessary*
+- Protections have not been placed for data fields ***Additional feature
+    - Input data lower bound
+    - Password lower/upper bound and char requirements
+- .txt file generation with script ***Additional feature - if possible by technology
