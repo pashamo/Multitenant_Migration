@@ -1,16 +1,12 @@
 function stringParser() {
     document.getElementById("data").innerHTML = "";
     document.getElementById("script").innerHTML = "";
-    var password = "ILIKECHANNINGTATUM"
+    var password = "TempPassword";
     var documentInput = document.getElementById("input").value;
 
     var splitPhase1 = documentInput.split(/ +|\r/);
     splitPhase1.splice(-1,1);
     var dataElements = splitPhase1.length;
-
-    if(dataElements/2 != 0) {
-
-    }
 
     document.getElementById("data").innerHTML = splitPhase1 + "<br><br><br># of data elements:" + dataElements + "<br><br><br>";
 
