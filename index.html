@@ -14,12 +14,16 @@
         <form>
             <textarea id="input" rows="30" cols="80">Input...</textarea>
             <br>
-            <input type="button" value="Generate Script" onclick="stringParser()">
+            Password:<input id="pwd" type="text"> 
+            <input id="btn" type="button" value="Generate Script" onclick="stringParser()">
         </form>
         <hr>
 
         <p id="data"></p>
-        <p id="script"></p>
+        <h3>--CREATE CMD</h3>
+        <p id="createCMD"></p>
+        <h3>--GRANT CMD</h3>
+        <p id="grantCMD"></p>
 
     </body>
 </html>
