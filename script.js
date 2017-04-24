@@ -6,7 +6,7 @@ function stringParser() {
     var password = document.getElementById("pwd").value;
     var documentInput = document.getElementById("input").value;
 
-    var splitPhase1 = documentInput.split(/ +|\r/);
+    var splitPhase1 = documentInput.split(/\s+|\r/);
     splitPhase1.splice(-1,1);
     var dataElements = splitPhase1.length/2;
 
